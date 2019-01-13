@@ -1,0 +1,18 @@
+.mat-toolbar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 99999;
+}
+
+.link {
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+mat-icon {
+  top: 4px;
+  position: relative;
+}

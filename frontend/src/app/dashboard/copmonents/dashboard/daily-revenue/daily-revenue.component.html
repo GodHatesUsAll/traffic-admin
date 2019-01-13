@@ -1,0 +1,22 @@
+<ngx-charts-line-chart
+  *ngIf="daily.length"
+  [view]="view"
+  [results]="stats"
+  [gradient]="gradient"
+  [scheme]="colorScheme"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [legend]="showLegend"
+  [showGridLines]="showGridLines"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxisLabel]="xAxisLabel"
+  [animations]="animations"
+  [roundDomains]="roundDomains"
+  [yAxisLabel]="yAxisLabel"
+  [autoScale]="autoScale"></ngx-charts-line-chart>
+
+<div *ngIf="!daily.length">
+  <h1>Chart in not available</h1>
+  <h3>No data found for current period</h3>
+</div>

@@ -1,0 +1,8 @@
+flask
+redis
+mysqlclient
+flask-cors
+bcrypt
+flask_sqlalchemy
+mysql-connector
+pyjwt

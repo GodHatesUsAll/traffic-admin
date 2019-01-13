@@ -1,0 +1,31 @@
+<!--<div class="top_menu" id="#top">-->
+  <!--<div class="admin-logo">-->
+    <!--<a routerLink="/dashboard">-->
+      <!--<img src="images/logo-admin.png" alt=""/>-->
+    <!--</a>-->
+  <!--</div>-->
+  <!--<div class="page_title">-->
+    <!--&lt;!&ndash;<i class={`fa ${icon}`} style={{marginTop: '10px'}}/>&ndash;&gt;-->
+    <!--&lt;!&ndash;&nbsp;&ndash;&gt;-->
+    <!--<span class="spacer">-->
+            <!--&lt;!&ndash;{title}&ndash;&gt;-->
+          <!--</span>-->
+
+    <!--<div class="profile">-->
+            <!--<span class="profile_text">-->
+              <!--&lt;!&ndash;{this.email}&ndash;&gt;-->
+              <!--<span class="logout">-->
+                <!---->
+<!--</span>-->
+<!--</span>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<mat-toolbar color="primary" class="mat-elevation-z6">
+  <span class="fill-remaining-space">
+    <mat-icon class="header-icon" matListIcon>{{params.icon}}</mat-icon> {{params.title}}
+  </span>
+
+  <span class="link" (click)="logOut()"><i class="fa fa-power-off"></i> Logout</span>
+</mat-toolbar>

@@ -1,0 +1,10 @@
+<a *ngFor="let item of nav"
+  [routerLink]="item.path"
+  routerLinkActive="active"
+  [routerLinkActiveOptions]="{exact: item.exact}"
+>
+  <mat-list-item >
+    <mat-icon matListIcon>{{item.icon}}</mat-icon>
+    {{item.name}}
+  </mat-list-item>
+</a>

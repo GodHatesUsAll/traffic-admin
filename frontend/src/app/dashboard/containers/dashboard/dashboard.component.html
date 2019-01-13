@@ -1,0 +1,29 @@
+<div class="inline-cards">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        Daily Revenue - USD
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <daily-revenue
+        *ngIf="stats"
+        [daily]="stats.daily"
+      ></daily-revenue>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card>
+    <week-snapshot
+      *ngIf="stats"
+      [weekData]="stats.weekly"
+    ></week-snapshot>
+  </mat-card>
+
+  <mat-card class="full-width">
+    <campaign-snapshot
+      *ngIf="stats"
+      (rangeChange)="onRangeChange($event)"
+      [campaigns]="stats.campaign"></campaign-snapshot>
+  </mat-card>
+</div>

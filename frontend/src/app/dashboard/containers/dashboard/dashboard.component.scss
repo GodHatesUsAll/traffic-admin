@@ -1,0 +1,14 @@
+.inline-cards {
+  display: flex;
+  flex-flow: row wrap;
+  mat-card {
+    overflow: hidden;
+    margin-top: 10px;
+    //float: left;
+    //margin-right: 15px;
+    &.full-width {
+      width: 100%
+    }
+  }
+}
+
