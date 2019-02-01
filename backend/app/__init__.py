@@ -97,7 +97,7 @@ def send_signup_email(address, hash):
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
         server.starttls()
-        server.login(fromaddr, "polosa123456789")
+        server.login(fromaddr, "password")
         text = msg.as_string()
         server.sendmail(fromaddr, toaddr, text)
         server.quit()
